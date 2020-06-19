@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		621AF823249D091700B6AA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621AF822249D091700B6AA3B /* Assets.xcassets */; };
 		621AF826249D091700B6AA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621AF824249D091700B6AA3B /* LaunchScreen.storyboard */; };
 		621AF82E249D095E00B6AA3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 621AF82D249D095E00B6AA3B /* GoogleService-Info.plist */; };
+		621AF832249D124C00B6AA3B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 621AF831249D124C00B6AA3B /* SnapKit */; };
 		6FE0026ABC27F70AD482430A /* Pods_EventGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B93985B94B572504ED88706 /* Pods_EventGesture.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		621AF825249D091700B6AA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		621AF827249D091700B6AA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		621AF82D249D095E00B6AA3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		621AF82F249D0EB500B6AA3B /* EventGesture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EventGesture.entitlements; sourceTree = "<group>"; };
 		BEF85DBE65CD009CBF780671 /* Pods-EventGesture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventGesture.release.xcconfig"; path = "Target Support Files/Pods-EventGesture/Pods-EventGesture.release.xcconfig"; sourceTree = "<group>"; };
 		F1E89FA4C97AF992145EEEA8 /* Pods-EventGesture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventGesture.debug.xcconfig"; path = "Target Support Files/Pods-EventGesture/Pods-EventGesture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FE0026ABC27F70AD482430A /* Pods_EventGesture.framework in Frameworks */,
+				621AF832249D124C00B6AA3B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +68,7 @@
 		621AF818249D091500B6AA3B /* EventGesture */ = {
 			isa = PBXGroup;
 			children = (
+				621AF82F249D0EB500B6AA3B /* EventGesture.entitlements */,
 				621AF819249D091500B6AA3B /* AppDelegate.swift */,
 				621AF81B249D091500B6AA3B /* SceneDelegate.swift */,
 				621AF81D249D091500B6AA3B /* ViewController.swift */,
@@ -91,7 +95,6 @@
 				F1E89FA4C97AF992145EEEA8 /* Pods-EventGesture.debug.xcconfig */,
 				BEF85DBE65CD009CBF780671 /* Pods-EventGesture.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +116,9 @@
 			dependencies = (
 			);
 			name = EventGesture;
+			packageProductDependencies = (
+				621AF831249D124C00B6AA3B /* SnapKit */,
+			);
 			productName = EventGesture;
 			productReference = 621AF816249D091500B6AA3B /* EventGesture.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 621AF80D249D091500B6AA3B;
+			packageReferences = (
+				621AF830249D124C00B6AA3B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 621AF817249D091500B6AA3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +367,7 @@
 			baseConfigurationReference = F1E89FA4C97AF992145EEEA8 /* Pods-EventGesture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EventGesture/EventGesture.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5U56L4EAR;
 				INFOPLIST_FILE = EventGesture/Info.plist;
@@ -377,6 +387,7 @@
 			baseConfigurationReference = BEF85DBE65CD009CBF780671 /* Pods-EventGesture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EventGesture/EventGesture.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5U56L4EAR;
 				INFOPLIST_FILE = EventGesture/Info.plist;
@@ -413,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		621AF830249D124C00B6AA3B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		621AF831249D124C00B6AA3B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 621AF830249D124C00B6AA3B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 621AF80E249D091500B6AA3B /* Project object */;
 }
