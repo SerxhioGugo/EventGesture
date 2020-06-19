@@ -13,9 +13,12 @@
 		621AF821249D091500B6AA3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621AF81F249D091500B6AA3B /* Main.storyboard */; };
 		621AF823249D091700B6AA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621AF822249D091700B6AA3B /* Assets.xcassets */; };
 		621AF826249D091700B6AA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 621AF824249D091700B6AA3B /* LaunchScreen.storyboard */; };
+		621AF82E249D095E00B6AA3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 621AF82D249D095E00B6AA3B /* GoogleService-Info.plist */; };
+		6FE0026ABC27F70AD482430A /* Pods_EventGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B93985B94B572504ED88706 /* Pods_EventGesture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B93985B94B572504ED88706 /* Pods_EventGesture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventGesture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		621AF816249D091500B6AA3B /* EventGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventGesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		621AF819249D091500B6AA3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		621AF81B249D091500B6AA3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		621AF822249D091700B6AA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		621AF825249D091700B6AA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		621AF827249D091700B6AA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621AF82D249D095E00B6AA3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BEF85DBE65CD009CBF780671 /* Pods-EventGesture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventGesture.release.xcconfig"; path = "Target Support Files/Pods-EventGesture/Pods-EventGesture.release.xcconfig"; sourceTree = "<group>"; };
+		F1E89FA4C97AF992145EEEA8 /* Pods-EventGesture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventGesture.debug.xcconfig"; path = "Target Support Files/Pods-EventGesture/Pods-EventGesture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE0026ABC27F70AD482430A /* Pods_EventGesture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				621AF818249D091500B6AA3B /* EventGesture */,
 				621AF817249D091500B6AA3B /* Products */,
+				FF05FA01D64F7F50983139E7 /* Pods */,
+				B29606DBD08CCA4DA26F7B4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,27 @@
 				621AF822249D091700B6AA3B /* Assets.xcassets */,
 				621AF824249D091700B6AA3B /* LaunchScreen.storyboard */,
 				621AF827249D091700B6AA3B /* Info.plist */,
+				621AF82D249D095E00B6AA3B /* GoogleService-Info.plist */,
 			);
 			path = EventGesture;
+			sourceTree = "<group>";
+		};
+		B29606DBD08CCA4DA26F7B4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B93985B94B572504ED88706 /* Pods_EventGesture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF05FA01D64F7F50983139E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1E89FA4C97AF992145EEEA8 /* Pods-EventGesture.debug.xcconfig */,
+				BEF85DBE65CD009CBF780671 /* Pods-EventGesture.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 621AF82A249D091700B6AA3B /* Build configuration list for PBXNativeTarget "EventGesture" */;
 			buildPhases = (
+				EFFAEF114B6086F5CE056719 /* [CP] Check Pods Manifest.lock */,
 				621AF812249D091500B6AA3B /* Sources */,
 				621AF813249D091500B6AA3B /* Frameworks */,
 				621AF814249D091500B6AA3B /* Resources */,
+				D72E8769E4C1FEA485C2EA08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				621AF826249D091700B6AA3B /* LaunchScreen.storyboard in Resources */,
+				621AF82E249D095E00B6AA3B /* GoogleService-Info.plist in Resources */,
 				621AF823249D091700B6AA3B /* Assets.xcassets in Resources */,
 				621AF821249D091500B6AA3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D72E8769E4C1FEA485C2EA08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventGesture/Pods-EventGesture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventGesture/Pods-EventGesture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventGesture/Pods-EventGesture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFFAEF114B6086F5CE056719 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventGesture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		621AF812249D091500B6AA3B /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		621AF82B249D091700B6AA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E89FA4C97AF992145EEEA8 /* Pods-EventGesture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		621AF82C249D091700B6AA3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF85DBE65CD009CBF780671 /* Pods-EventGesture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
